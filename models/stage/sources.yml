@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+    - name: src
+      database: sourcedb
+      schema: mk_mall
+      tables:
+        - name: regions
+          columns:
+            - name: name
+              description: name of the region
+        - name: nations
+        - name: customers
+        - name: order2
+        - name: suppliers
+        - name: partsupps
+        - name: parts 
+        - name: lineitems

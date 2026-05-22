@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_nations
+    columns:
+      - name: nation_id
+        description: primary key for nations table
+        data_tests:
+          - unique
+     
+  - name: stg_regions
+    columns:
+      - name: name
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['AFRICA','AMERICA','ASIA','EUROPE','MIDDLE EAST']
+              config: 
+                store_failures: true
+
+     
+
+
+         
+

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+   - name: int_customer
+     columns:
+      - name: customer_id
+        data_tests:
+          - not_null
+
+   - name: int_statistics
+     columns:
+       - name: inventory_value_usd
+         description: "{{doc('silvercol')}}"
+       - name: unit_margin
+
+seeds:
+  - name: supplier_names
+    config: 
+        alias: supp_names
+       
+   
