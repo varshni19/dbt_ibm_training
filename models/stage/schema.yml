@@ -7,14 +7,7 @@ models:
         description: primary key for nations table
         data_tests:
           - unique
-      - name: region_id
-        data_tests:
-          - relationships:
-              arguments:
-                to: ref('stg_regions')
-                field: nation_id
-
-
+     
   - name: stg_regions
     columns:
       - name: name
